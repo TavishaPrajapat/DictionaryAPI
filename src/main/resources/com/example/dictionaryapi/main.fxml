@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML declaration -->
+<?import java.net.URL?>
+<!-- Importing URL class -->
+<?import javafx.scene.control.Button?>
+<!-- Importing Button class -->
+<?import javafx.scene.image.Image?>
+<!-- Importing Image class -->
+<?import javafx.scene.image.ImageView?>
+<!-- Importing ImageView class -->
+<?import javafx.scene.layout.AnchorPane?>
+<!-- Importing AnchorPane class -->
+
+<AnchorPane prefHeight="494.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionaryapi.Main">
+    <!-- AnchorPane definition -->
+    <stylesheets>
+        <!-- Stylesheet -->
+        <URL value="@main.css" />
+        <!-- URL to the CSS file -->
+    </stylesheets>
+    <children>
+        <!-- Child elements -->
+        <ImageView fitHeight="232.0" fitWidth="229.0" layoutX="235.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+            <!-- ImageView for an image -->
+            <image>
+                <!-- Image element -->
+                <Image url="@dictionary.png" />
+                <!-- Image URL -->
+            </image>
+        </ImageView>
+        <Button fx:id="open" layoutX="203.0" layoutY="333.0" mnemonicParsing="false" onAction="#opendictionary" prefHeight="62.0" prefWidth="292.0" text="OPEN DICTIONARY" />
+        <!-- Button for opening dictionary -->
+    </children>
+</AnchorPane>

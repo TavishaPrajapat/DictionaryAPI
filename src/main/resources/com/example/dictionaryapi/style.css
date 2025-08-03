@@ -1,0 +1,72 @@
+/* Label styling */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Passion+One:wght@400;700;900&family=Satisfy&display=swap');
+/* Reset default margin and padding */
+* {
+    -fx-padding: 0;
+    -fx-margin: 0;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+/* Set font family for all elements except italicized text */
+*:not(.italicized) {
+    -fx-font-family: "Poppins", sans-serif;
+}
+
+/* Main container styling */
+AnchorPane {
+    -fx-background-color: #124076;
+        -fx-border-color: #6AD4DD; /* Border color */
+        -fx-border-width: 5px; /* Border width */
+       -fx-effect: dropshadow(gaussian, #6AD4DD, 10, 0, 0, 0); /* Drop shadow */
+
+}
+
+Label {
+    -fx-font-size: 30px;
+    -fx-text-fill: #6AD4DD;
+    -fx-font-family: 'Satisfy', cursive; /* Use the imported Google Font */
+    -fx-font-weight: 400;
+    -fx-font-style: normal;
+}
+
+/* Text field styling */
+TextField {
+    -fx-pref-height: 40px;
+    -fx-pref-width: 400px;
+    -fx-font-size: 16px;
+}
+
+/* Button styling */
+/* Button styling */
+Button {
+    -fx-background-color: #124076; /* Background color */
+    -fx-border-color: #6AD4DD; /* Border color */
+    -fx-border-width: 5px; /* Border width */
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-effect: dropshadow(gaussian, #6AD4DD, 10, 0, 0, 0); /* Drop shadow */
+}
+
+/* Text area styling */
+TextArea {
+    -fx-pref-height: 300px;
+    -fx-pref-width: 520px;
+    -fx-font-size: 16px;
+}
+
+/* Italicized text styling */
+.italicized {
+    -fx-font-style: italic;
+    -fx-border-color: #ae9cff;
+    -fx-border-width: 0 0 0 5px;
+    -fx-padding: 0 0 0 20px;
+}
+/* style.css */
+ TextArea{
+     -fx-text-fill: #124076;
+     -fx-font-family: "Passion One", sans-serif;
+      -fx-font-weight: 400;
+      -fx-font-style: normal;
+
+}

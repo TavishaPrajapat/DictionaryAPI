@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML declaration -->
+<?import java.net.URL?>
+<!-- Importing URL class -->
+<?import javafx.scene.control.Button?>
+<!-- Importing Button class -->
+<?import javafx.scene.control.Label?>
+<!-- Importing Label class -->
+<?import javafx.scene.control.TextArea?>
+<!-- Importing TextArea class -->
+<?import javafx.scene.control.TextField?>
+<!-- Importing TextField class -->
+<?import javafx.scene.image.Image?>
+<!-- Importing Image class -->
+<?import javafx.scene.image.ImageView?>
+<!-- Importing ImageView class -->
+<?import javafx.scene.layout.AnchorPane?>
+<!-- Importing AnchorPane class -->
+<?import javafx.scene.text.Font?>
+<!-- Importing Font class -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dictionaryapi.HelloController">
+   <!-- AnchorPane definition -->
+   <children>
+      <!-- Child elements -->
+      <ImageView fitHeight="356.0" fitWidth="296.0" layoutX="33.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <!-- ImageView for an image -->
+         <image>
+            <!-- Image element -->
+            <Image url="@classroom.png" />
+            <!-- Image URL -->
+         </image>
+      </ImageView>
+      <Label layoutX="524.0" layoutY="61.0" text="Dictionary" textFill="#6ad4dd">
+         <!-- Label for the title -->
+         <font>
+            <!-- Font settings -->
+            <Font name="Blackadder ITC" size="30.0" />
+            <!-- Font name and size -->
+         </font>
+      </Label>
+      <TextField fx:id="searchField" layoutX="369.0" layoutY="121.0" prefHeight="40.0" prefWidth="400.0" />
+      <!-- TextField for search input -->
+      <Button fx:id="searchButton" layoutX="789.0" layoutY="121.0" mnemonicParsing="false" onAction="#doSearch" prefHeight="40.0" prefWidth="100.0" text="Search" />
+      <!-- Button for search action -->
+      <TextArea fx:id="resultArea" layoutX="369.0" layoutY="180.0" prefHeight="300.0" prefWidth="520.0" />
+      <!-- TextArea to display search results -->
+      <ImageView fitHeight="54.0" fitWidth="72.0" layoutX="670.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <!-- ImageView for an image -->
+         <image>
+            <!-- Image element -->
+            <Image url="@book.png" />
+            <!-- Image URL -->
+         </image>
+      </ImageView>
+   </children>
+   <stylesheets>
+      <!-- Stylesheet -->
+      <URL value="@style.css" />
+      <!-- URL to the CSS file -->
+   </stylesheets>
+</AnchorPane>

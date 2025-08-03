@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Passion+One:wght@400;700;900&family=Satisfy&display=swap');
+/* Main container styling */
+AnchorPane {
+    -fx-background-color: #124076;
+        -fx-border-color: #6AD4DD; /* Border color */
+        -fx-border-width: 5px; /* Border width */
+            -fx-effect: dropshadow(gaussian, #6AD4DD, 10, 0, 0, 0); /* Drop shadow */
+
+}
+/* Button styling */
+Button {
+ -fx-font-family: "Passion One", sans-serif;
+      -fx-font-weight: 400;
+      -fx-font-style: normal;
+    -fx-background-color: #124076; /* Background color */
+    -fx-border-color: #6AD4DD; /* Border color */
+    -fx-border-width: 5px; /* Border width */
+    -fx-text-fill: #ffffff; /* Text color */
+    -fx-font-size: 16px; /* Font size */
+    -fx-effect: dropshadow(gaussian, #6AD4DD, 10, 0, 0, 0); /* Drop shadow */
+}
